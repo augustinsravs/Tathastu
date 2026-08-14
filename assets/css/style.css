@@ -587,6 +587,7 @@ p { margin: 0 0 1em; }
   overflow: hidden;
 }
 .card-media img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+.card-media img.img-contain { object-fit: contain; }
 .card:hover .card-media img { transform: scale(1.07); }
 .card-media .tag {
   position: absolute;
