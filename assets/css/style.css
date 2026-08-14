@@ -444,6 +444,46 @@ p { margin: 0 0 1em; }
   color: var(--forest-700);
   letter-spacing: 0.4px;
 }
+
+/* Full-bleed background photo feature (image behind text, light tint) */
+.story-feature {
+  position: relative;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  overflow: hidden;
+  isolation: isolate;
+  padding: 70px 0;
+}
+.story-feature-bg {
+  position: absolute; inset: 0; z-index: -2;
+  background-size: cover;
+  background-position: center;
+}
+.story-feature::after {
+  content: "";
+  position: absolute; inset: 0; z-index: -1;
+  background: rgba(39, 51, 15, 0.4);
+}
+.story-feature-body { max-width: 600px; }
+.story-feature-body .badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.94);
+  border-radius: 999px;
+  padding: 8px 18px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--forest-700);
+  letter-spacing: 0.4px;
+  margin-bottom: 18px;
+}
+.story-feature-body h2 { color: var(--white); }
+.story-feature-body p { color: rgba(255, 255, 255, 0.92); }
+.story-feature-body .checklist li { color: rgba(255, 255, 255, 0.94); text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35); }
+@media (max-width: 620px) {
+  .story-feature { min-height: 440px; padding: 54px 0; }
+}
 .split-body h2 { font-size: clamp(1.6rem, 3vw, 2.3rem); }
 .split-body p { color: var(--muted); }
 .checklist { list-style: none; padding: 0; margin: 0 0 26px; display: grid; gap: 12px; }

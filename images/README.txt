@@ -50,23 +50,11 @@ brush-combo.jpg           Family combo pack
 GALLERY PAGE (gallery.html)
 ---------------------------
 banner-gallery.jpg        Page banner background. 1920x700.
-gallery-01-collection.jpg Collecting fallen leaves       (tall tile)
-gallery-02-sorting.jpg    Sorting and grading
-gallery-03-washing.jpg    Washing in fresh water
-gallery-04-pressing.jpg   Heat pressing                  (wide tile)
-gallery-05-trimming.jpg   Trimming the edges
-gallery-06-quality.jpg    Quality inspection
-gallery-07-stacking.jpg   Stacking and counting          (tall tile)
-gallery-08-uv.jpg         UV sterilisation
-gallery-09-packing.jpg    Packing into sleeves
-gallery-10-team.jpg       The artisan team               (wide tile)
-gallery-11-dispatch.jpg   Cartons ready for dispatch
-gallery-12-finished.jpg   The finished range
 unit-floor.jpg            Wide view of the production floor. 1200x900.
 
-Tall tiles look best portrait (800x1200).
-Wide tiles look best landscape (1600x800).
-All others: landscape 1200x900.
+Gallery/                  All photo-grid tiles live in this subfolder.
+                          Plain pictures, no captions — just drop a photo
+                          in and add one <figure> block (see below).
 
 
 CONTACT PAGE (contact.html)
@@ -76,6 +64,14 @@ banner-contact.jpg        Page banner background. 1920x700.
 
 ADDING MORE GALLERY PHOTOS
 --------------------------
-Open gallery.html, copy any <figure class="gal"> block, and change the
-src, data-label, alt and the caption text. Add "tall" or "wide" to the
-class to make that tile bigger. The lightbox picks it up automatically.
+Drop the photo into images/Gallery/, then open gallery.html and copy
+one of the existing blocks inside <div class="gallery-grid">:
+
+  <figure class="gal reveal">
+    <img src="images/Gallery/your-file.jpg" data-seed="NN" alt="Describe the photo">
+  </figure>
+
+Give it a data-seed number that isn't used by another tile (any unused
+integer works). No caption, no title — the gallery is pictures only.
+The lightbox (click to enlarge, arrow keys to browse) picks it up
+automatically, no other changes needed.
