@@ -8,7 +8,7 @@
    across every page. Change it once — it updates everywhere.
    ------------------------------------------------------------ */
 const SITE = {
-  brand: "Thathasthu",
+  brand: "Tathastu",
   tagline: "From Nature's Bounty to Your Table",
 
   // Owner's WhatsApp number — country code + number, DIGITS ONLY (no +, no spaces)
@@ -60,7 +60,7 @@ function leafPlaceholder(label, seed = 0) {
     ["#40916c", "#95d5b2"],
   ];
   const [a, b] = greens[Math.abs(seed) % greens.length];
-  const txt = String(label || "Thathasthu").slice(0, 34);
+  const txt = String(label || "Tathastu").slice(0, 34);
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
@@ -99,7 +99,7 @@ function attachImageFallbacks(root = document) {
   // Background images (hero / banners) declared via data-bg
   root.querySelectorAll("[data-bg]").forEach((el, i) => {
     const url = el.dataset.bg;
-    const label = el.dataset.label || "Thathasthu";
+    const label = el.dataset.label || "Tathastu";
     const probe = new Image();
     probe.onload = () => { el.style.backgroundImage = `url("${url}")`; };
     probe.onerror = () => { el.style.backgroundImage = `url("${leafPlaceholder(label, i + 3)}")`; };
