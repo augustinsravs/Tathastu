@@ -1,5 +1,5 @@
 /* ============================================================
-   Thathasthu Tribal Suite — site scripts
+   Tathastu Sustainables — site scripts
    ============================================================ */
 
 /* ------------------------------------------------------------
@@ -22,7 +22,7 @@ const SITE = {
   email: "tathastu.com@gmail.com",
 
   address: {
-    line1: "Thathasthu Tribal Suite",
+    line1: "Tathastu Sustainables",
     line2: "4MJV+WC4, Balakrishnapuram",
     city: "Ichchapuram",
     state: "Andhra Pradesh",
@@ -78,7 +78,7 @@ function leafPlaceholder(label, seed = 0) {
     <path d="M-4-52 34-40M-10-18 26 2M-18 16 8 42" stroke="rgba(255,255,255,.3)" stroke-width="3" fill="none" stroke-linecap="round"/>
   </g>
   <text x="400" y="424" text-anchor="middle" font-family="Georgia,serif" font-size="30" fill="rgba(255,255,255,.95)">${txt.replace(/&/g, "&amp;").replace(/</g, "&lt;")}</text>
-  <text x="400" y="462" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="15" letter-spacing="4" fill="rgba(255,255,255,.55)">THATHASTHU TRIBAL SUITE</text>
+  <text x="400" y="462" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="15" letter-spacing="4" fill="rgba(255,255,255,.55)">Tathastu Sustainables</text>
 </svg>`;
   return "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svg);
 }

@@ -1,4 +1,4 @@
-THATHASTHU TRIBAL SUITE — IMAGE FOLDER
+Tathastu Sustainables — IMAGE FOLDER
 =======================================
 
 Drop your real photos into this folder using EXACTLY these file names.
